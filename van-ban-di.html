@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="vendors/css/4cols.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="name_content">
+            <i class='bx bx-user'></i>
+            <Span>Admin</Span>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+        <ul class="nav_list">
+
+            <li>
+                <a href="#" class="active"><i class='bx bxs-home'></i><span>Trang chủ</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-list-plus'></i><span>Thêm công văn</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-chevrons-right'></i></i><span>Văn bản đến</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-chevrons-left'></i></i><span>Văn bản đi</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-chevrons-down'></i></i><span>Văn bản nội bộ</span></a>
+            </li>
+            <li>
+                <a href="#"><i class='bx bx-log-out'></i><span>Đăng xuất</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Phần chính của văn bản đi -->
+    <div class="home_content">
+        <div class="wrapper">
+            <div class="title_text">
+                <i class='bx bx-left-arrow-alt'></i><span>Văn bản đi</span>
+            </div>
+        </div>
+        <div class="main_content">
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <div class="row-h">
+                            <div class="text_left"><label for=""></label></div>
+                            <div class="content_input">
+                                <select name="" id="">
+                                    <option value="">Tháng năm</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Từ ngày:</label></div>
+                            <input type="date">
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"> <label for="">Đến ngày:</label></div>
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Số văn bản:</label></div>
+                            <div class="content_input">
+                                <select name="" id="">
+                                    <option value="">Tất cả</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Loại văn bản:</label></div>
+                            <div class="content_input">
+                                <select name="" id="">
+                                    <option value="">Tất cả</option>
+                                    <option value="">Công văn</option>
+                                    <option value="">Chỉ thị</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Chủ đề:</label></div>
+                            <div class="content_input">
+                                <select name="" id="">
+                                    <option value="">Tất cả</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Số ký hiệu:</label></div>
+                            <div class="content_input">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"> <label for="">Nơi ban hành:</label></div>
+                            <div class="content_input">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Lĩnh vực:</label></div>
+                            <div class="content_input">
+                                <select name="" id="">
+                                    <option value="">Tất cả</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row-h" style="align-items: center;">
+                            <div class="text_left"><label for="">Trích yếu:</label></div>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-search">
+                    <a href="#" class="button_search">
+                        <span><i class='bx bx-search-alt-2'></i></span>
+                        <span>Tìm kiếm</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+        <!-- Table -->
+        <div class="w3-container">
+            <table class="w3-table w3-striped">
+                <tr>
+                    <th></th>
+                    <th>STT</th>
+                    <th>Ngày tháng</th>
+                    <th>Ngày hết hiệu lực</th>
+                    <th>Số ký hiệu</th>
+                    <th>Người ký</th>
+                    <th>Nơi nhận</th>
+                </tr>
+                 <tr>
+                    <td><a href="#" class="open-quickview"><i class='bx bx-dots-horizontal-rounded'></i></a></td>
+                    <td>1</td>
+                    <td>14/10/2020</td>
+                    <td>14/10/2020</td>
+                    <td>48/QĐ-BGDĐT</td>
+                    <td>Nguyễn Duy</td>
+                    <td>Chánh văn phòng, cục trưởng cục CNTT</td>
+                </tr>
+                
+            </table>
+        </div>
+        <!-- Phần modal quickview -->
+        <div class="quick-view hide-quick-view">
+            <div class="quickview-modal">
+                <div class="modal-header">
+                    <span>Văn bản đi</span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <div class="main-modal">
+                    <div class="wrapper-content">
+                        <div class="col-moddal">
+                            <div class="content-modal">
+                                <p><strong>Số văn bản: </strong><span>Văn bản đi</span></p>
+                                <p><strong>Số ký hiệu: </strong><span>48/QĐ-BGDĐT</span></p>
+                                <p><strong>Ngày ban hành: </strong><span>25/3/2022</span></p>
+                                <p><strong>Nơi nhận: </strong><span>Chánh văn phòng, cục trưởng cục CNTT</span></p>
+                                <p><strong>Người ký: </strong><span>Lê Hoàng Hà</span></p>
+                                <p><strong>Số lượng văn bản: </strong><span>4</span></p>
+                                <p><strong>Chủ đề: </strong><span>Chủ đề 2</span></p>
+                            </div>
+                        </div>
+                        <div class="col-moddal">
+                            <div class="content-modal">
+                                <p><strong>Loại văn bản </strong><span>Quyết định</span></p>
+                                <p><strong>Số đi: </strong><span>1</span></p>
+                                <p><strong>Ngày hết hiệu lực:</strong><span>25/3/2022</span></p>
+                                <p><strong>Người gửi: </strong><span>---</span></p>
+                                <p><strong>Người duyệt: </strong><span>Nguyễn Văn Phúc</span></p>
+                                <p><strong>Số trang: </strong><span>8</span></p>
+                                <p><strong>Lĩnh vực: </strong><span>Giáo dục</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trich-yeu">
+                        <div class="main-ty">
+                            <strong>
+                                <p>Trích yếu</p>
+                            </strong>
+                            <span>Hợp nhất văn bản quy phạm pháp luật và pháp điển hệ thống quy phạm pháp luật thuộc lĩnh
+                                vực giáo dục năm 2021</span>
+                        </div>
+                    </div>
+                    <div class="noi-dung">
+                        <div class="main-nd">
+                            <strong>
+                                <p>Nội dung</p>
+                            </strong>
+                            <span>Hợp nhất văn bản quy phạm pháp luật và pháp điển hệ thống quy phạm pháp luật thuộc lĩnh vực giáo dục năm 2021</span>
+                        </div>
+                    </div>
+                    <div class="content-table">
+                        <div class="text-title-file"><strong>File đính kèm</strong></div>
+                        <div class="table">
+                            <div class="w3-container">
+                                <table class="w3-table-all">
+                                  <tr>
+                                    <th></th>
+                                    <th>STT</th>
+                                    <th>Tên tài liệu</th>
+                                    <th>Mô tả</th>
+                                    <th class="w3-right-align">Đuôi</th>
+                                  </tr>
+                                  <tr>
+                                    <td><i class='bx bx-cloud-download'></i></td>
+                                    <td>1</td>
+                                    <td>Ke hoach phap dien - hop nhat BGD 2021</td>
+                                    <td>Kế hoạch hợp nhất</td>
+                                    <td class="w3-right-align">.pdf</td>
+                                  </tr>
+
+                                </table>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"><a href="#">Đóng</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/js.js"></script>
+</html>
