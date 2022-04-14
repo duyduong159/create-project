@@ -5,28 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="vendors/css/4cols.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <div class="login_box">
+    <!-- Trang login -->
+    <div class="wrapper__login">
+        <div class="form__login">
             <form action="">
-                <h2>Đăng nhập</h2>
-                <div class="input_form">
-                    <span>Tên đăng nhập</span>
-                    <input type="text" placeholder="Tên đăng nhập">
+                <div class="content__login">
+                    <div class="img_vector">
+                        <img src="img/login_img.png" alt="Hình ảnh đăng nhập">
+                    </div>
+                    <div class="content__form">
+                        <div class="text__tilte">
+                            <h2>Đăng nhập hệ thống</h2>
+                        </div>
+                        <div class="content_input">
+                            <i class='bx bx-user'></i>
+                            <input type="text" placeholder="Tên đăng nhập">
+                        </div>
+                        <div class="content_input">
+                            <i class='bx bx-key'></i>
+                            <input type="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="btn__login">
+                            <button>Đăng nhập</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="input_form">
-                    <span>Mật khẩu</span>
-                    <input type="password" name="" id="" placeholder="Mật khẩu">
+                <div class="footer__text"
+                    style="text-align: center; color: #222e7c; font-weight: 600; font-size: 14px;">
+                    <span>Quản lý công văn nội bộ &copy 2022 Code bởi Team</span>
                 </div>
-                <div class="input_form"><input type="submit" name="" class="btn_login" value="Đăng nhập"></div>
             </form>
         </div>
     </div>
+    <!-- End -->
 </body>
 
 </html>

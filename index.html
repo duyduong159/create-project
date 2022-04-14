@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="vendors/css/4cols.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 </head>
 
 <body>
+    <!-- Sidebar bên trái -->
     <div class="sidebar">
         <div class="name_content">
             <i class='bx bx-user'></i>
@@ -25,7 +27,13 @@
                 <a href="#" class="active"><i class='bx bxs-home'></i><span>Trang chủ</span></a>
             </li>
             <li>
-                <a href="#"><i class='bx bx-list-plus'></i><span>Thêm công văn</span></a>
+                <a href="#" class="feat-btn"><i class='bx bx-list-plus'></i><span>Danh mục</span><i
+                        class='arrow bx bxs-down-arrow'></i></a>
+                <ul class="feat-show">
+                    <li><a href="#">Thêm loại văn bản</a></li>
+                    <li><a href="#">Cơ quan ban hành</a></li>
+                    <li><a href="#">Cơ quan nhận</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#"><i class='bx bx-chevrons-right'></i></i><span>Văn bản đến</span></a>
@@ -43,7 +51,9 @@
     </div>
     <div class="home_content">
         <div class="home_container">
-            <div class="text_home"><h1>Hệ thống quản lý công văn</h1></div>
+            <div class="text_home">
+                <h1>Hệ thống quản lý công văn</h1>
+            </div>
             <div class="content_main">
                 <div class="content_cart">
                     <a href="#">
@@ -73,5 +83,11 @@
         </div>
     </div>
 </body>
-
+<!-- Sidebar sổ xuống -->
+<script>
+    $('.feat-btn').click(function(){
+       $('.feat-show').toggleClass('show');
+       $('.arrow').toggleClass('rotate');
+   });
+</script>
 </html>
