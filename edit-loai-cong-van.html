@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="vendors/css/4cols.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-
 </head>
 
 <body>
@@ -48,47 +48,54 @@
             </li>
         </ul>
     </div>
-    <!-- end -->
-    <!-- main -->
+    <!-- Thêm loại công văn -->
     <div class="home_content">
-        <div class="home_container">
-            <div class="text_home">
-                <h1>Hệ thống quản lý công văn</h1>
+        <div class="wrapper">
+            <div class="title_text">
+                <i class='bx bx-left-arrow-alt'></i><span>Sửa loại văn bản</span>
             </div>
-            <div class="content_main">
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Thêm công văn</p>
-                        <img src="img/them.png" alt="Thêm công văn">
-                    </a>
+        </div>
+        <div class="main_content">
+            <!-- Xuất thông báo -->
+            <p class="text__alert danger">Tên không được bỏ trống</p>
+            <p class="text__alert danger">Tên đã tồn tại, vui lòng nhập tên khác</p>
+            <!-- end -->
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <div class="row-h">
+                            <div class="text_left"><label for="">Mã</label></div>
+                            <div class="content_input">
+                                <input type="text" placeholder="Nhập mã" value="TB">
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"> <label for="">Tên:</label></div>
+                            <div class="content_input">
+                                <input type="text" placeholder="Nhập tên" value="Thông báo">
+                            </div>
+                        </div>
+                        <div class="row-h">
+                            <div class="text_left"> <label for="">Ghi chú:</label></div>
+                            <div class="content_input">
+                                <input type="text" placeholder="Nhập ghi chú" value="Không có ghi chú">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="content_cart ">
-                    <a href="#">
-                        <p>Công văn đến</p>
-                        <img src="img/den.png" alt="Thêm công văn">
-                    </a>
+                <div class="button">
+                    <button class="btn__add">Cập nhật</button>
                 </div>
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Công văn đi</p>
-                        <img src="img/di.png" alt="Thêm công văn">
-                    </a>
-                </div>
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Công văn nội bộ</p>
-                        <img src="img/noibo.png" alt="Thêm công văn">
-                    </a>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
 <!-- Menu con sidebar -->
 <script>
-    $('.feat-btn').click(function(){
-       $('.feat-show').toggleClass('show');
-       $('.arrow').toggleClass('rotate');
-   });
+    $('.feat-btn').click(function () {
+        $('.feat-show').toggleClass('show');
+        $('.arrow').toggleClass('rotate');
+    });
 </script>
+<script src="js/js.js"></script>
 </html>
