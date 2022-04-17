@@ -496,7 +496,9 @@ body {
     display: none;
 }
 
-.sidebar .feat-show.show {
+.sidebar .cate-show.show,
+.sidebar .cv-show.show,
+.sidebar .add-cv-show.show{
     display: block;
 }
 
@@ -504,7 +506,9 @@ body {
     padding-left: 50px;
 }
 
-.sidebar .arrow {
+.sidebar .arrow,
+.sidebar .arrow2,
+.sidebar .arrow3{
     font-size: 12px;
     position: absolute;
     right: 0;
