@@ -60,35 +60,53 @@
     <!-- end -->
     <!-- main -->
     <div class="home_content">
-        <div class="home_container">
-            <div class="text_home">
-                <h1>Hệ thống quản lý công văn</h1>
+        <span style="font-size: 35px; display: block; margin: 20px 0 0 20px; font-weight: bold; color: #f98909;">Thống Kê</span>
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-number">1024</div>
+                    <div class="card-text">Thống kê</div>
+                </div>
+                <div class="card-icon">
+                    <i class='bx bx-message-square-dots'></i>
+                </div>
             </div>
-            <div class="content_main">
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Thêm công văn</p>
-                        <img src="img/them.png" alt="Thêm công văn">
-                    </a>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-number">1024</div>
+                    <div class="card-text">Thống kê</div>
                 </div>
-                <div class="content_cart ">
-                    <a href="#">
-                        <p>Công văn đến</p>
-                        <img src="img/den.png" alt="Thêm công văn">
-                    </a>
+                <div class="card-icon">
+                    <i class='bx bxs-book-content'></i>
                 </div>
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Công văn đi</p>
-                        <img src="img/di.png" alt="Thêm công văn">
-                    </a>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-number">1024</div>
+                    <div class="card-text">Thống kê</div>
                 </div>
-                <div class="content_cart">
-                    <a href="#">
-                        <p>Công văn nội bộ</p>
-                        <img src="img/noibo.png" alt="Thêm công văn">
-                    </a>
+                <div class="card-icon">
+                    <i class='bx bxs-bookmarks'></i>
                 </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <div class="card-number">1024</div>
+                    <div class="card-text">Thống kê</div>
+                </div>
+                <div class="card-icon">
+                    <i class='bx bx-circle-three-quarter'></i>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart">
+                <h2>Biều đồ đường (cái tên này hơi bị phèn nửa tự đổi)</h2>
+                <canvas id="lineChart"></canvas>
+            </div>
+            <div class="chart" id="doughnut-chart">
+                <h2>Biểu đồ tròn</h2>
+                <canvas id="doughnut" width="400" height="400"></canvas>
             </div>
         </div>
     </div>
@@ -108,5 +126,8 @@
         $('.arrow3').toggleClass('rotate');
     });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+<script src="js/chart-dou.js"></script>
+<script src="js/chart.js"></script>
 
 </html>
