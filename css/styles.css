@@ -119,6 +119,7 @@ body {
 .sidebar ul li a:hover {
     background: #f98909;
     color: #fff;
+    outline: none;
 }
 
 .sidebar ul li a i {
@@ -136,7 +137,6 @@ body {
     left: 240px;
     width: calc(100% - 240px);
     transition: all .5s ease;
-    background: #f5f5f5;
 }
 
 
@@ -299,11 +299,6 @@ body {
     border: 1px solid #40a9ff;
 }
 
-.btn-search {
-    justify-content: flex-end;
-    display: flex;
-    margin-right: 62px;
-}
 
 /* .btn-search button {
     color: #fff;
@@ -330,17 +325,27 @@ body {
     background: #40a9ff;
     border-color: #40a9ff;
 } */
+button {
+    outline: none;
+    border: none;
+}
 
-.btn-search a {
-    padding: 8px 15px;
+.btn-search{
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+.button_search{
+    display: inline-block;
+    padding: 7px 13px;
     background: #1890ff;
     color: #fff;
     text-decoration: none;
-    border-radius: 2px;
-    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    border-radius: 3px;
+    /* transition: all .3s cubic-bezier(.645, .045, .355, 1); */
 }
 
-.btn-search a:hover {
+.button_search:hover {
     background: #40a9ff;
 }
 
@@ -473,7 +478,8 @@ body {
 
 .sidebar .cate-show.show,
 .sidebar .cv-show.show,
-.sidebar .add-cv-show.show{
+.sidebar .add-cv-show.show,
+.sidebar .chart-show.show{
     display: block;
 }
 
@@ -483,7 +489,8 @@ body {
 
 .sidebar .arrow,
 .sidebar .arrow2,
-.sidebar .arrow3{
+.sidebar .arrow3,
+.sidebar .arrow4{
     font-size: 12px;
     position: absolute;
     right: 0;
@@ -492,12 +499,13 @@ body {
 }
 .sidebar.activesb .arrow,
 .sidebar.activesb .arrow2,
-.sidebar.activesb .arrow3{
+.sidebar.activesb .arrow3,
+.sidebar.activesb .arrow4{
     display: block;
 }
 
 .sidebar a .rotate {
-    transform: rotate(-180deg);
+    transform: rotateZ(-180deg);
 }
 
 /* login */
@@ -565,6 +573,7 @@ body {
 .wrapper__login .content__form .content_input input{
     border: none;
     outline: none;
+    background-color: transparent;
 }
 
 .wrapper__login .content__form button{
@@ -696,4 +705,28 @@ body {
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
+}
+
+.text-title{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.text-content{
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px 0;
+   
+}
+
+.text-content p {
+    line-height: 35px;   
+}
+
+.text-f{
+    margin: 20px 15px;
 }
