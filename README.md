@@ -1,5 +1,5 @@
-Cập nhật CSS
-file new tab vừa làm
-kiểm tra lại input đăng nhập xem còn màu không
-Kiểm tra lại button tìm kiếm có css chưa
-Copy JS trong file new-tab.html
+File quanly.html
+
+Kiểm tra lại mấy cái sidebar hình như dư thẻ <i> :)
+
+Copy JS dòng 170 trong file quanly.html.

@@ -479,7 +479,8 @@ button {
 .sidebar .cate-show.show,
 .sidebar .cv-show.show,
 .sidebar .add-cv-show.show,
-.sidebar .chart-show.show{
+.sidebar .chart-show.show,
+.sidebar .manage-show.show{
     display: block;
 }
 
@@ -490,7 +491,8 @@ button {
 .sidebar .arrow,
 .sidebar .arrow2,
 .sidebar .arrow3,
-.sidebar .arrow4{
+.sidebar .arrow4,
+.sidebar .arrow5{
     font-size: 12px;
     position: absolute;
     right: 0;
@@ -500,7 +502,8 @@ button {
 .sidebar.activesb .arrow,
 .sidebar.activesb .arrow2,
 .sidebar.activesb .arrow3,
-.sidebar.activesb .arrow4{
+.sidebar.activesb .arrow4,
+.sidebar.activesb .arrow5{
     display: block;
 }
 
